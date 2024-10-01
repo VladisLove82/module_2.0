@@ -7,7 +7,9 @@ def string_info(string):
     return len(string), string.upper(), string.lower()
 def is_contains(string, list_to_search):
     count_calls()
-    return string.lower() in (item.lower() for item in list_to_search)
+    low_string = string.lower()
+    return low_string.lower() in (item.lower() for item in list_to_search)
+
 
 
 print(string_info('Capybara'))
